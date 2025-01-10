@@ -1,0 +1,240 @@
+#pricing {
+  --fs-price: 2rem;
+  background-image: url(../img/background-plans.jpg);
+  background-size: cover;
+  & header {
+    text-align: center;
+  }
+  & h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    text-align: left;
+  }
+  & .cards {
+    margin-top: 2rem;
+  }
+
+  & .card p {
+    margin-top: 0.25rem;
+  }
+
+  & zin-pricing {
+    display: block;
+    padding-block: 1.5rem;
+    font: var(--fw-bold) var(--fs-price) / 1.2 var(--ff-sans);
+  }
+
+  & zin-pricing small {
+    font: var(--fw-base) 1rem/125% var(--ff-sans);
+    color: var(--text-color-secondary);
+  }
+  .btn {
+    width: 100%;
+    border: 0;
+    --btn-bg-color: var(--text-color-primary);
+    --btn-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 0.5rem;
+    font-size: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
+    cursor: pointer;
+    background-color: var(--brand-color-secondary);
+    color: var(--btn-color);
+  }
+
+  & .separator {
+    height: 1px;
+    margin-block: 2rem;
+    background: radial-gradient(
+      var(--text-color-secondary) 0%,
+      var(--surface-color) 70%
+    );
+  }
+  & li {
+    color: var(--text-color-secondary);
+    background: url(../assets/icons/Check.svg) no-repeat;
+    padding-left: 2rem;
+    text-align:left ;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  & ul + small {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--text-color-secondary);
+  }
+
+  & .premium {
+    position: relative;
+
+    & .card {
+      padding-top: 4.25rem;
+
+      & > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        padding: 0.75rem 2rem;
+        background: linear-gradient(
+          90deg,
+          var(--brand-color-secondary) 0%,
+          var(--brand-color-primary) 100%
+        );
+
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+
+        font: 600 var(--fs-sm) var(--ff-sans);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--bg-color);
+      }
+    }
+    padding: 2px;
+    &::before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--brand-color-secondary) 0%,
+        var(--brand-color-primary) 100%
+      );
+      position: absolute;
+      inset: 0;
+      border-radius: 1.5rem;
+      z-index: -1;
+    }
+  }
+  @media (width >=80em) {
+    --fs-price: 2.5rem;
+    & header {
+      max-width: 50rem;
+      margin-inline: auto;
+    }
+
+    & .premium .card {
+      padding-bottom: 6rem;
+    }
+    .btn-md {
+      padding: 0.75rem 1.5rem;
+      font-size: var(--fs-base);
+    }
+
+    & .card:nth-child(3) .separator {
+      margin-block: 1.5rem;
+    }
+  }
+}
+.card {
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 1.5rem;
+}
+/* Squares of the page */
+.py-base {
+  padding-block: var(--py-base);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.py-2xl {
+  padding-block: var(--py-2xl);
+}
+
+.px-lg {
+  padding-inline: var(--px-lg);
+}
+
+.container {
+  --max-width: 375px;
+  /* width: min(var(--max-width), 100% - var(--px-lg) * 2);
+                           border: solid pink; */
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-1\.5 {
+  gap: 1.5rem;
+}
+.grid {
+  display: grid;
+}
+
+article {
+  text-align: center;
+  margin-top: 8%;
+}
+ strong {
+  font-size: 46px;
+  color: blue;
+}
+article p {
+  font-size: 46px;
+}
+
+@media (width >= 80rem) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: inherit;
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+ 
+}
+
+/*Responsive*/
+
+
+
+@media (max-width: 390px) {
+  .even-columns {
+  justify-items: center;
+  }
+  .title-header{
+    padding-top:120px;  
+  }
+  .title-header p{
+    font-size:22px;
+    color: black;
+  }
+  .title-header strong{
+    font-size:35px;
+    padding: 20px;
+  }
+
+}
