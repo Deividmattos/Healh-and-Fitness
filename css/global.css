@@ -266,7 +266,7 @@ h3::before {
     justify-content: space-between;
   }
 
-  /*if screen width is less than or equal to 550px then*/
+  /*if screen width is less than or equal to 570px then*/
   @media (max-width: 570px) {
     .container-footer {
       flex-wrap: wrap;
@@ -280,11 +280,36 @@ h3::before {
       display: flex;
     }
   }
-
-  @media (max-width: 390px) {
-    .nav-menu {
-      display: flex;
+  @media (max-width: 440px) {
+    .container-footer {
+      padding-bottom: 2rem;
       flex-direction: column;
+  
+    }
+    .limited{
+      flex-direction: column;
+      text-align: center;
+      font-size: 15px;
+    }
+   
+ 
+  }
+   
+@media  (min-width: 430px) and (max-width: 440px)  {
+  .container-footer {
+    padding-bottom: 2rem;
+    flex-direction: column;
+
+  }
+  .limited{
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+  @media (max-width: 390px) {
+    .nav-menu  ul{
+      margin: 5px;
     }
 
     .nav-menu img {
@@ -304,7 +329,7 @@ h3::before {
     .limited {
       align-items: center;
       justify-content: center;
-      font-size:12px;
+      font-size: 12px;
       flex-direction: column;
     }
     .content {

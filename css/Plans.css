@@ -218,8 +218,19 @@ article p {
 }
 
 /*Responsive*/
-
-
+@media (max-width:430px) {
+.title-header{
+  padding-top:80px;
+  }
+  .title-header strong{
+    font-size:40px;
+  }
+  .title-header p{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+  }
+}
 
 @media (max-width: 390px) {
   .even-columns {
