@@ -19,7 +19,7 @@
   flex-direction: column;
 }
 .info ul li{
-  color: black;
+  color: black !important;
 }
 .fa {
   color: deeppink;
