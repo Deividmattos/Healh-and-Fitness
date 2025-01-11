@@ -219,6 +219,7 @@ article p {
 }
 
 /*Responsive*/
+
 @media (max-width: 768px){
   .title-header{
     padding-top:80px;
