@@ -199,6 +199,7 @@ article {
 }
 article p {
   font-size: 46px;
+  color: deeppink;
 }
 
 @media (width >= 80rem) {
@@ -218,6 +219,16 @@ article p {
 }
 
 /*Responsive*/
+@media (max-width: 768px){
+  .title-header{
+    padding-top:80px;
+    }
+    .title-header strong{
+      font-size:60px;
+    }
+  
+}
+
 @media (max-width:430px) {
 .title-header{
   padding-top:80px;
@@ -226,10 +237,11 @@ article p {
     font-size:40px;
   }
   .title-header p{
-    font-size: 14px;
-    color: black;
-    font-weight: bold;
+    font-size:22px;
+    color:deeppink;
+    padding: 0px 1rem;
   }
+
 }
 
 @media (max-width: 390px) {
@@ -241,7 +253,7 @@ article p {
   }
   .title-header p{
     font-size:22px;
-    color: black;
+    color:deeppink;
   }
   .title-header strong{
     font-size:35px;
