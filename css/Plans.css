@@ -1,6 +1,7 @@
 #pricing {
   --fs-price: 2rem;
   background-image: url(../img/background-plans.jpg);
+  background-position: center;
   background-size: cover;
   & header {
     text-align: center;
